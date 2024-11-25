@@ -21,7 +21,7 @@ public class DepartementHashSet implements IDepartement<Departement> {
     @Override
     public boolean rechercherDepartement(String nom) {
         for (Departement dep : departements) {
-            if (dep.getNom().equalsIgnoreCase(nom)) {
+            if (dep.getNom().equals(nom)) {
                 return true;
             }
         }
